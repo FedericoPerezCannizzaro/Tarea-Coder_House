@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*Esto se suele poner para no tener problemas con los contenedores, no me acuerdo bien por qué, pero es un tema con los padding, margin... */
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+
+
+/*banner*/
+
+.header {
+    background-color: black;
+    background-size: cover;
+    height: 100px;
+    
+}
+.header h1{
+    color: white; 
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.header--nav {
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+.header--nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.header--nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: none;
+    border-radius: 5px;
+}
+
+.header--nav a:hover {
+    background-color: grey;
+}
+
+/*home*/
+
+.articuloHome {
+    background-image: url(img/dead.jpg);
+    background-repeat: no-repeat;
+    background-size: 3000px;
+    background-position: 60%70%;
+    width: 100%;
+    height: 396px;
+    text-align: center;
+}
+
+.articuloHome h2 {
+    padding: 10px;
+    color:whitesmoke ;
+}
+
+.articuloHome p {
+    position: absolute;
+    top: 480px;
+    left: 30px;
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+.articuloHome img {
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.contenidoHome {
+    display: flex;
+    flex-direction: row; /*Esto significa que los elementos que estan dentro de la clase iran en horizontal*/
+    background-color: rgba(0, 0, 0, 0.493);
+    align-items: center; /*Acá los dos textos quedan alineados*/
+
+}
+
+.encabezadoHome {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.articuloHome-Link {
+    color: yellow;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+/*articulos destacados*/
+
+/*Clase que engloba la parte de los articulos y el aside, estan las dos cosas juntas*/
+.contenedorArticulosAside {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*Cambiar nombre de la clase, poner un h3 que diga titulo sección articulos o algo asi */
+.articuloHome-Parrafo {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+}
+.aside-publicidad {
+    display: flex;
+    align-items: center; /*Pone la imagen en el centro del contenedor*/
+    width: 20%;
+}
+.aside-publicidad img {
+    width: 300px; 
+}
+.contenedorArticulos {
+    width: 60%; /*este es el width que tienen los articulos en total, y lo que resta se lo puse el aside, bah, le puse menos asi queda espacio entre sí */
+}
+/*Esta clase corresponde a un div con 3 elementos, o sea, hay dos div de 3 articulos*/
+.articulos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0 20px 0; /*Agrego margin arriba y abajo*/
+}
+.articulos img{
+    width: 200px;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    background-color: black;
+    color:white; 
+}
+footer h3 {
+    text-align: left;
+    padding: 10px 0px;
+    font-size: 22px;
+}
+.contenedorFooter {
+    display: flex;
+    justify-content: space-evenly; /*Doy un espaciado entre los elementos, es parecido al space-around */
+}
+.footer_pagina ul li {
+    list-style: none;
+}
+.footer_pagina ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    
+}
+
+.listaFooter li{
+    margin: 5px 0; /*Separo los elementos de la lista */
+}
+
+.infoContacto p{
+    margin: 0 0 20px 0;  /*0 Arriba 0 A la derecha 20px abajo y 0 a la izquierda */
+}
